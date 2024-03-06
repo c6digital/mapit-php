@@ -10,7 +10,8 @@ class MapIt
     public function __construct(
         protected string $key,
         protected string $url = 'https://mapit.mysociety.org',
-    ) {}
+    ) {
+    }
 
     public function postcode(string $postcode): ?array
     {
