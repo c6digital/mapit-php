@@ -25,6 +25,29 @@ $mapIt = new MapIt(
 );
 ```
 
+### Laravel
+
+If you're using Laravel, this package provides a service provider that automatically registers the `MapIt` class and uses `.env` variables to configure the key and URL.
+
+```sh
+MAPIT_KEY=...
+MAPIT_URL=...
+```
+
+You can then request it from the container when you need to use it.
+
+```php
+use C6Digital\MapIt\MapIt;
+
+class MyController
+{
+    public function __invoke(MapIt $mapIt)
+    {
+        // ...
+    }
+}
+```
+
 ### Retrieving postcodes
 
 ```php
