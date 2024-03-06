@@ -21,7 +21,7 @@ use C6Digital\MapIt\MapIt;
 
 $mapIt = new MapIt(
     key: 'your-mapit-key-here',          // Your MapIt API key / token.
-    url: 'https://mapit.mysociety.org/'  // An optional MapIt URL.
+    url: 'https://mapit.mysociety.org'  // An optional MapIt URL.
 );
 ```
 
