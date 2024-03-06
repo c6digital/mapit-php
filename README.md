@@ -25,6 +25,18 @@ $mapIt = new MapIt(
 );
 ```
 
+### Retrieving postcodes
+
+```php
+$mapIt->postcode('SW1P 3BD');
+```
+
+### Throwing when errors occur
+
+```php
+$mapIt->throw()->postcode(...);
+```
+
 ## Testing
 
 ```bash
