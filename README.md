@@ -4,19 +4,11 @@
 [![Tests](https://img.shields.io/github/actions/workflow/status/c6digital/mapit-php/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/c6digital/mapit-php/actions/workflows/run-tests.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/c6digital/mapit-php.svg?style=flat-square)](https://packagist.org/packages/c6digital/mapit-php)
 
-This is where your description should go. Try and limit it to a paragraph or two. Consider adding a small example.
-
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/mapit-php.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/mapit-php)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+This package provides a lightweight SDK to interact with [MapIt](https://mapit.mysociety.org/) APIs. It doesn't have methods for everything, only the things that we as an organisation frequently use.
 
 ## Installation
 
-You can install the package via composer:
+You can install the package via Composer:
 
 ```bash
 composer require c6digital/mapit-php
@@ -25,8 +17,12 @@ composer require c6digital/mapit-php
 ## Usage
 
 ```php
-$skeleton = new C6Digital\MapIt();
-echo $skeleton->echoPhrase('Hello, C6Digital!');
+use C6Digital\MapIt\MapIt;
+
+$mapIt = new MapIt(
+    key: 'your-mapit-key-here',          // Your MapIt API key / token.
+    url: 'https://mapit.mysociety.org/'  // An optional MapIt URL.
+);
 ```
 
 ## Testing
