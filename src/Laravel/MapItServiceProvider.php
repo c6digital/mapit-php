@@ -11,7 +11,7 @@ class MapItServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/mapit.php',
+            __DIR__.'/../../config/mapit.php',
             'mapit'
         );
 
@@ -26,7 +26,7 @@ class MapItServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/mapit.php' => config_path('mapit.php'),
+            __DIR__.'/../../config/mapit.php' => config_path('mapit.php'),
         ]);
     }
 }
