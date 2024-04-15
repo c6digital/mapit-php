@@ -16,7 +16,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "illuminate/http": "^10.0"
+        "illuminate/http": "^11.3"
     },
     "require-dev": {
         "pestphp/pest": "^2.15",
