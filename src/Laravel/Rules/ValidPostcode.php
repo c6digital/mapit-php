@@ -10,7 +10,8 @@ class ValidPostcode implements ValidationRule
 {
     public function __construct(
         protected MapIt $mapIt,
-    ) {}
+    ) {
+    }
 
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
