@@ -20,6 +20,11 @@ class MapIt
         return $this->client()->get("/postcode/{$postcode}")->json();
     }
 
+    public function englishRegions(): ?array
+    {
+        return $this->client()->get('/areas/ER')->json();
+    }
+
     public function throw(bool $shouldThrow = true): static
     {
         $this->shouldThrow = $shouldThrow;
