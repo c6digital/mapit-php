@@ -2,6 +2,10 @@
 
 All notable changes to `mapit-php` will be documented in this file.
 
+## v0.1.1 - 2024-04-30
+
+* Add new `englishRegions()` method.
+
 ## v0.1.0 - 2024-04-26
 
 * Add Laravel 11.x support.
