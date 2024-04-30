@@ -25,6 +25,11 @@ class MapIt
         return $this->client()->get('/areas/ER')->json();
     }
 
+    public function areas(string $type): ?array
+    {
+        return $this->client()->get("/areas/{$type}")->json();
+    }
+
     public function throw(bool $shouldThrow = true): static
     {
         $this->shouldThrow = $shouldThrow;
